@@ -1,0 +1,14 @@
+.polaris-container2 {
+    font-family: sans-serif;
+     display: flex;
+   flex-direction: column;
+    height: 88.2vh; 
+     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;  
+     background-image: url(../images/polaris.webp);
+     background-repeat: no-repeat; 
+     background-size: cover;
+     background-position: center;
+    color: white;
+    font-size: small;
+    left: 80%; 
+  }
