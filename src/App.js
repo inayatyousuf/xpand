@@ -43,7 +43,7 @@ function App() {
           <Route path='/inspiration4' element={ user ? <InspirationFour data={data} pis={pis}/>  : <Login />}/>
           <Route path='/polaris' element={user ? <Polaris />  : <Login />}/>
           <Route path='/details/:id' element={<SidebarDetails data={data} pis={pis} />} />
-          <Route path='/log-in' element={<Login />} />
+          <Route path='/log-in' element={user ? <Home /> : <Login />} />
           <Route path='/payment' element={<Paypal />} />
 
         </Routes>

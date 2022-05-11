@@ -41,6 +41,7 @@ export default function SignInSide() {
   const navigate = useNavigate()
   const location = useLocation()
   const redirectPath = location.pathname
+  console.log(redirectPath)
   const dispatch = useDispatch()
 
   const handleSubmit = (event) => {

@@ -140,7 +140,7 @@ const activeLinkStyle = ({isActive}) => {
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
-                LOG IN
+               {user ? 'Log out' : 'Login'}
               </NavLink>
             
             </li>
@@ -151,12 +151,11 @@ const activeLinkStyle = ({isActive}) => {
            (button && <ButtonStyle buttonStyle="btn--outline">Log in</ButtonStyle>)
           :
           (
-            <div>
-            {/* <span style={{color: "white", marginRight:"1rem"}} >{user.name}</span> */}
-           { button && <ButtonStyle buttonStyle="btn--outline"
+            
+            button && <ButtonStyle buttonStyle="btn--outline"
             onClick={handleLogout}
-          >Log out</ButtonStyle>}
-          </div>
+          >Log out</ButtonStyle>
+          
           )
           
           }

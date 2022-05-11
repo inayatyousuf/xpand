@@ -67,7 +67,8 @@ const InspirationFour = ({data, pis}) => {
     <div>
     
      <div>
-       <h1 style={{color:'white',padding:"0.5rem 1rem", marginLeft:"2rem"}}>Austronauts</h1>
+     {/* <h1 container style={{border:"1px solid red" ,color:'white',padding:"0.5rem 1rem", marginLeft:"2rem"}}>Austronauts</h1> */}
+       <Typography variant='h4' color='white' sx={{ m: 1, ml:16 }}>Astronauts</Typography>
         <Grid container spacing={0} justifyContent="center" gap="1rem">
        
         {
@@ -79,7 +80,9 @@ const InspirationFour = ({data, pis}) => {
         </Grid>
     </div>
     <div >
-    <h1 style={{color:'white',padding:"0.5rem 1rem", marginLeft:"2rem"}}>PI'S</h1>
+    {/* <h1 style={{color:'white',padding:"0.5rem 1rem", marginLeft:"2rem"}}>PI'S</h1> */}
+    <Typography variant='h4' color='white' sx={{ m: 2, ml:16 }}>PI'S</Typography>
+   
      <Grid container spacing={0} justifyContent="center" gap="1rem"> 
      {
         pis.map((pi, index)=>(
